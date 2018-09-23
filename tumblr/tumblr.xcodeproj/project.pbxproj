@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642C9C902152E7AD004A6690 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C9C8F2152E7AD004A6690 /* DetailsViewController.swift */; };
 		64CD51D0214E1B9000BC06FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CD51CF214E1B9000BC06FC /* AppDelegate.swift */; };
 		64CD51D5214E1B9000BC06FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64CD51D3214E1B9000BC06FC /* Main.storyboard */; };
 		64CD51D7214E1B9500BC06FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CD51D6214E1B9500BC06FC /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		642C9C8F2152E7AD004A6690 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		64CD51CC214E1B9000BC06FC /* tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CD51CF214E1B9000BC06FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64CD51D4214E1B9000BC06FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				64CD51D8214E1B9500BC06FC /* LaunchScreen.storyboard */,
 				64CD51DB214E1B9500BC06FC /* Info.plist */,
 				64CD51E3214E217400BC06FC /* PhotoCell.swift */,
+				642C9C8F2152E7AD004A6690 /* DetailsViewController.swift */,
 			);
 			path = tumblr;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				64CD51D0214E1B9000BC06FC /* AppDelegate.swift in Sources */,
 				64CD51E4214E217400BC06FC /* PhotoCell.swift in Sources */,
 				64CD51E2214E1D1300BC06FC /* PhotosViewController.swift in Sources */,
+				642C9C902152E7AD004A6690 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

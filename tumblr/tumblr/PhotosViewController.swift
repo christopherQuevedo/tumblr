@@ -34,7 +34,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     
 
     var posts: [[String: Any]] = []
-    
+    //var image: UIImage!
     @IBOutlet weak var photoTableView: UITableView!
     
     override func viewDidLoad() {
@@ -65,9 +65,34 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         task.resume()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! DetailsViewController
+        let cell = sender as! UITableViewCell
+        let indexPath = photoTableView.indexPath(for: cell)!
         
+        let post = posts[indexPath.row]
         
-
+        if let photos = post["photos"] as? [[String: Any]] {
+            // 1.
+            let photo = photos[0]
+            // 2.
+            let originalSize = photo["original_size"] as! [String: Any]
+            // 3.
+            let urlString = originalSize["url"] as! String
+            // 4.
+            let url = URL(string: urlString)
+            vc.url = url!
+        }
+ 
+        //if let indexPath = photoTableView.indexPath(for: cell){
+         //   let post = posts[indexPath.row]
+         //   let detailViewController = segue.destination as! DetailsViewController
+         //   detailViewController.post = post
+        //}
+        //var detailsViewController = segue.destination as! DetailsViewController
+        //detailsViewController.image = self.imageView.image
     }
 
     override func didReceiveMemoryWarning() {
